@@ -1,0 +1,10 @@
+.searchresults {
+    background-color: grey;
+    width: 30%;
+    margin: 5px;
+}
+
+.searchitem {
+    height: 3rem;
+    margin: 10px;
+}

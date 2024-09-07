@@ -1,0 +1,10 @@
+.searchbar {
+    height: 3rem;
+    width: 25rem;
+    border-radius: 20px;
+}
+
+.searchbutton {
+    height: 3rem;
+    border-radius: 20px;
+}
