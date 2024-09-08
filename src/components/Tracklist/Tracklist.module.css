@@ -1,3 +1,8 @@
 .tracklist {
-    width: 30%;
+    width: 100%;
+}
+
+.button {
+    position: relative;
+    top: 100px;
 }

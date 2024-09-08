@@ -2,9 +2,12 @@
     background-color: grey;
     width: 30%;
     margin: 5px;
+    border-radius: 10px;
 }
 
 .searchitem {
+    display: flex;
+    flex-direction: column;
     height: 3rem;
     margin: 10px;
 }

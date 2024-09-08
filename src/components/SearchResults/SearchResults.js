@@ -1,18 +1,24 @@
 import search from './SearchResults.module.css';
 
-function SearchResults() {
+function SearchResults(props) {
 
-    const songs = ["john", "loves", "waffles"];
+    function addHandler(e) {
+        // FIXME FIND OUT HOW TO ADD AN ELEMENT TO TRACKLIST
+        props.setTrackList((prevItems) => [...prevItems])
+    }
 
-    function songHandler() {
-        return songs.map((song, index) => (
-        <div className={search.searchitem} key={index}>{song}</div>
+    function songHandler(searchResults) {
+        return searchResults.map((song) => (
+        <div className={search.searchitem} key={song.id}>
+            <span>{song.name} <button onClick={addHandler}>+</button></span>
+            <span>{song.artist} | {song.album}</span>
+        </div>
         ));
     }
 
     return (
         <div className={search.searchresults}>
-            {songHandler()}
+            {songHandler(props.searchResults)}
         </div>
     );
 }
